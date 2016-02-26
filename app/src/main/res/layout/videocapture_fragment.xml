@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?selectableItemBackground">
+
+    <include
+        layout="@layout/camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controlsFrame" />
+
+    <FrameLayout
+        android:id="@+id/controlsFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?colorPrimaryDark"
+        android:elevation="@dimen/toolbar_elevation"
+        android:paddingBottom="@dimen/content_inset_less"
+        android:paddingLeft="@dimen/content_inset"
+        android:paddingRight="@dimen/content_inset"
+        android:paddingTop="@dimen/content_inset_less"
+        tools:ignore="UnusedAttribute">
+
+        <ImageButton
+            android:id="@+id/facing"
+            android:layout_width="@dimen/action_icon_size_smaller"
+            android:layout_height="@dimen/action_icon_size_smaller"
+            android:layout_gravity="center_vertical|start"
+            android:background="@drawable/circle_selector"
+            android:padding="@dimen/content_inset_less"
+            android:scaleType="fitXY"
+            android:src="@drawable/aa_camera_switch_button"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/video"
+            android:layout_width="@dimen/action_icon_size"
+            android:layout_height="@dimen/action_icon_size"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_selector"
+            android:padding="@dimen/content_inset_less"
+            android:scaleType="fitXY"
+            android:src="@drawable/capture"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/recordDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/defaultDuration"
+            android:textColor="#fff"
+            android:textSize="@dimen/regular_content_fontsize" />
+
+    </FrameLayout>
+
+</RelativeLayout>

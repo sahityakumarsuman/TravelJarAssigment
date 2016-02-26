@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TravelJarAssigment</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="defaultDuration">00:00</string>
+    <string name="permissions_needed">Permissions Needed</string>
+    <string name="video_perm_warning">Permission Required to access Camera</string>
+    <string name="record_again">RETRY</string>
+    <string name="save_video">SAVE</string>
+    <string name="portrait">Portrait</string>
+    <string name="portrait_warning">Record in portrait?</string>
+    <string name="yes">Yes</string>
+    <string name="error">Error</string>
+    <string name="capture_unsupported">device doest not support video capture.</string>
+    <string name="no_audio_access">No audio will be recorded.</string>
+</resources>
